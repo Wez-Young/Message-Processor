@@ -1,0 +1,29 @@
+﻿<Window x:Class="_40402601.UserInput"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_40402601"
+        mc:Ignorable="d"
+        Title="UserInput" Width="363.945" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight" Height="384">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="62*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="249*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="HeaderTxt" ToolTip="Message ID" Grid.Row="0" TextAlignment="Center" Height="23" Margin="10,10,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBox x:Name="BodyTxt" ToolTip="Message Body" Grid.Row="0" TextAlignment="Center" Margin="10,38,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" AcceptsReturn="True" Width="332"/>
+        <Button x:Name="SortBtn" Grid.Row="1" Content="Categorise" HorizontalAlignment="Left" Margin="268,10,10,5" VerticalAlignment="Top" Width="75" Height="20" Click="SortBtn_Click"/>
+
+        <TextBox x:Name="NewHeaderTxt" Visibility="Visible" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,9,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" Width="333" Height="23" VerticalAlignment="Top"/>
+        <TextBox x:Name="SenderTxt" Visibility="Visible" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,40,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" Width="333" Height="23" VerticalAlignment="Top"/>
+        <TextBox x:Name="SubjectTxt" Visibility="Visible" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,68,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" Width="333" Height="23" VerticalAlignment="Top"/>
+        <TextBox x:Name="NewBodyTxt" Visibility="Visible" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,152,0,79" Grid.Row="2" TextWrapping="Wrap" Text="" Width="333"/>
+        <TextBox x:Name="Sort_CodeTxt" Visibility="Visible" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,96,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" Width="333" Height="23" VerticalAlignment="Top"/>
+        <TextBox x:Name="IncidentTxt" Visibility="Visible" TextAlignment="Center" HorizontalAlignment="Left" Margin="10,124,0,0" Grid.Row="2" TextWrapping="Wrap" Text="" Width="333" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="NewMessageBtn" Visibility="Visible" Grid.Row="2" Content="New Message" HorizontalAlignment="Left" Margin="10,0,0,14" Width="82" Click="NewMessageBtn_Click" Height="38" VerticalAlignment="Bottom"/>
+        <Button x:Name="FinishedBtn" Visibility="Visible" Grid.Row="2" Content="Finish" HorizontalAlignment="Left" Margin="261,0,0,14" Width="82" Click="FinishedBtn_Click" Height="38" VerticalAlignment="Bottom"/>
+
+    </Grid>
+</Window>
